@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/financialStatements"
+        android:checked="true"
+        android:color="@color/color1"
+        android:icon="@drawable/money"
+        android:title="Statements" />
+    <item
+        android:id="@+id/plane"
+        android:checked="true"
+        android:color="@color/color1"
+        android:icon="@drawable/accounting"
+        android:title="Plan" />
+    <item
+        android:id="@+id/wallet"
+        android:checked="true"
+        android:color="@color/color1"
+        android:icon="@drawable/wallet"
+        android:title="Wallets" />
+    <item
+        android:id="@+id/calender"
+        android:checked="true"
+        android:color="@color/color1"
+        android:icon="@drawable/baseline_calendar_month_24"
+        android:title="Calender" />
+
+    <item
+        android:id="@+id/profile"
+        android:checked="true"
+        android:color="@color/color1"
+        android:icon="@drawable/baseline_person_24"
+        android:title="Profile" />
+</menu>

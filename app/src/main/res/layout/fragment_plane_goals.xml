@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color5"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_10sdp"
+    android:paddingVertical="@dimen/_10sdp"
+    tools:context=".Presentation.User.FinancialStatements.PlaneGoals">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Select Plane Goal"
+        android:textColor="@color/color4"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_4sdp" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_20sdp">
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Long Term Goals"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/color4"/>
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Short Term Goals"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/color4"/>
+    </RadioGroup>
+    <EditText
+        android:id="@+id/period1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="For a period"
+        android:inputType="text"
+        android:backgroundTint="@color/color5"
+        android:padding="@dimen/_7sdp"
+        android:textColor="@color/textColor"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:textColorHint="@color/textColor"
+        android:textSize="@dimen/_16sdp" />
+    <EditText
+        android:id="@+id/goal1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="goal"
+        android:inputType="text"
+        android:backgroundTint="@color/color5"
+        android:padding="@dimen/_7sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:textColor="@color/textColor"
+        android:layout_weight="1"
+        android:textColorHint="@color/textColor"
+        android:textSize="@dimen/_16sdp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/button_view"
+        android:elevation="@dimen/_5sdp"
+        android:text="Create Plane"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18sdp" />
+
+</LinearLayout>

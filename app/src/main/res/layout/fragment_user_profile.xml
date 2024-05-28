@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    tools:context=".Presentation.User.UserProfile">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="User Profile"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_20sdp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="User Name"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginStart="@dimen/_20sdp" />
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/editetext_view"
+            android:drawablePadding="@dimen/_5sdp"
+            android:inputType="text"
+            android:padding="@dimen/_7sdp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textColor"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintTop_toBottomOf="@id/title2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Family Number"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginStart="@dimen/_20sdp" />
+        <EditText
+            android:id="@+id/familyNumbre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/editetext_view"
+            android:drawablePadding="@dimen/_5sdp"
+            android:inputType="number"
+            android:padding="@dimen/_7sdp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textColor"
+            android:textSize="@dimen/_16sdp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Phone Number"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginStart="@dimen/_20sdp" />
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/editetext_view"
+            android:drawablePadding="@dimen/_5sdp"
+            android:inputType="phone"
+            android:padding="@dimen/_7sdp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textColor"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintTop_toBottomOf="@id/familyNumbre" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Fixed income"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginStart="@dimen/_20sdp" />
+        <EditText
+            android:id="@+id/income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/editetext_view"
+            android:drawablePadding="@dimen/_5sdp"
+            android:inputType="number"
+            android:padding="@dimen/_7sdp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textColor"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintTop_toBottomOf="@id/phone" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Unstable income"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginStart="@dimen/_20sdp" />
+
+        <EditText
+            android:id="@+id/budget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/editetext_view"
+            android:drawablePadding="@dimen/_5sdp"
+            android:inputType="number"
+            android:padding="@dimen/_7sdp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textColor"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintTop_toBottomOf="@id/income" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/updateDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/button_view"
+            android:elevation="@dimen/_5sdp"
+            android:text="Update"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintEnd_toEndOf="@id/familyNumbre"
+            app:layout_constraintStart_toStartOf="@id/familyNumbre"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/button_view"
+            android:elevation="@dimen/_5sdp"
+            android:text="Logout"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintEnd_toEndOf="@id/familyNumbre"
+            app:layout_constraintStart_toStartOf="@id/familyNumbre"
+            app:layout_constraintTop_toBottomOf="@id/updateDate" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

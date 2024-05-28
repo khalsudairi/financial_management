@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_nav"
+    app:startDestination="@id/financialStatement">
+    <fragment
+        android:id="@+id/financialStatement"
+        android:name="com.app.financialmanagement.Presentation.User.FinancialStatements.FinancialStatements"
+        tools:layout="@layout/fragment_financial_statements">
+        <action
+            android:id="@+id/action_financialStatement_to_monthlySavings"
+            app:destination="@id/monthlySavings" />
+        <action
+            android:id="@+id/action_financialStatement_to_hobbies"
+            app:destination="@id/hobbies" />
+        <action
+            android:id="@+id/action_financialStatement_to_monthlyCosts"
+            app:destination="@id/monthlyCosts" />
+        <action
+            android:id="@+id/action_financialStatement_to_annualCosts"
+            app:destination="@id/annualCosts" />
+        <action
+            android:id="@+id/action_financialStatement_to_dailyExpenses"
+            app:destination="@id/dailyExpenses" />
+        <action
+            android:id="@+id/action_financialStatement_to_graph"
+            app:destination="@id/graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/annualCosts"
+        android:name="com.app.financialmanagement.Presentation.User.FinancialStatements.Annual.AnnualCosts"
+        tools:layout="@layout/fragment_annual_costs">
+        <action
+            android:id="@+id/action_annualCosts_to_financialStatement"
+            app:destination="@id/financialStatement" />
+        <action
+            android:id="@+id/action_annualCosts_to_addingAnnual"
+            app:destination="@id/addingAnnual" />
+    </fragment>
+    <fragment
+        android:id="@+id/hobbies"
+        android:name="com.app.financialmanagement.Presentation.User.FinancialStatements.Hobbies.Hobbies"
+        tools:layout="@layout/fragment_hobbies">
+        <action
+            android:id="@+id/action_hobbies_to_financialStatement"
+            app:destination="@id/financialStatement" />
+        <action
+            android:id="@+id/action_hobbies_to_addingHobbies"
+            app:destination="@id/addingHobbies" />
+    </fragment>
+    <fragment
+        android:id="@+id/monthlyCosts"
+        android:name="com.app.financialmanagement.Presentation.User.FinancialStatements.MonthlyCost.MonthlyCosts"
+        tools:layout="@layout/fragment_monthly_costs">
+        <action
+            android:id="@+id/action_monthlyCosts_to_financialStatement"
+            app:destination="@id/financialStatement" />
+        <action
+            android:id="@+id/action_monthlyCosts_to_addingMonthlyCost"
+            app:destination="@id/addingMonthlyCost" />
+    </fragment>
+    <fragment
+        android:id="@+id/monthlySavings"
+        android:name="com.app.financialmanagement.Presentation.User.FinancialStatements.MonthlySaving.MonthlySavings"
+        tools:layout="@layout/fragment_monthly_savings">
+        <action
+            android:id="@+id/action_monthlySavings_to_financialStatement"
+            app:destination="@id/financialStatement" />
+        <action
+            android:id="@+id/action_monthlySavings_to_addingMonthlySaving"
+            app:destination="@id/addingMonthlySaving" />
+    </fragment>
+    <fragment
+        android:id="@+id/dailyExpenses"
+        android:name="com.app.financialmanagement.Presentation.User.FinancialStatements.DailyExpenses.Dailyexpenses"
+        tools:layout="@layout/fragment_dailyexpenses">
+        <action
+            android:id="@+id/action_dailyExpenses_to_financialStatement"
+            app:destination="@id/financialStatement" />
+        <action
+            android:id="@+id/action_dailyExpenses_to_addingDailyExpenses"
+            app:destination="@id/addingDailyExpenses" />
+    </fragment>
+    <fragment
+        android:id="@+id/sharedWallet"
+        android:name="com.app.financialmanagement.Presentation.User.Sharedwallet.SharedWallet"
+        tools:layout="@layout/fragment_shared_wallet">
+        <action
+            android:id="@+id/action_sharedWallet_to_addWallet"
+            app:destination="@id/addWallet" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addWallet"
+        android:name="com.app.financialmanagement.Presentation.User.Sharedwallet.AddingWallet"
+        tools:layout="@layout/fragment_adding_wallet">
+        <action
+            android:id="@+id/action_addWallet_to_sharedWallet"
+            app:destination="@id/sharedWallet" />
+        <action
+            android:id="@+id/action_addWallet_to_search"
+            app:destination="@id/search" />
+    </fragment>
+    <fragment
+        android:id="@+id/search"
+        android:name="com.app.financialmanagement.Presentation.User.Sharedwallet.SearchForUser"
+        tools:layout="@layout/fragment_search_for_user">
+        <action
+            android:id="@+id/action_search_to_addWallet"
+            app:destination="@id/addWallet" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/calender"
+        android:name="com.app.financialmanagement.Presentation.User.NotificationUser.CalendarFragment"
+        tools:layout="@layout/fragment_calendar">
+        <action
+            android:id="@+id/action_calender_to_notification"
+            app:destination="@id/notification" />
+    </fragment>
+    <fragment
+        android:id="@+id/notification"
+        android:name="com.app.financialmanagement.Presentation.User.NotificationUser.ViewNotifications"
+        tools:layout="@layout/fragment_view_notifications">
+        <action
+            android:id="@+id/action_notification_to_calender"
+            app:destination="@id/calender" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/financialPlane"
+        android:name="com.app.financialmanagement.Presentation.User.FinacialPlane.FinancialPlane"
+        tools:layout="@layout/fragment_financial_plane" >
+        <action
+            android:id="@+id/action_financialPlane_to_yearDetails"
+            app:destination="@id/yearDetails" />
+        <action
+            android:id="@+id/action_financialPlane_to_planeDetails"
+            app:destination="@id/planeDetails" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/planeDetails"
+        android:name="com.app.financialmanagement.Presentation.User.FinacialPlane.PlaneDetails"
+        tools:layout="@layout/fragment_plane_details" >
+        <action
+            android:id="@+id/action_planeDetails_to_financialPlane"
+            app:destination="@id/financialPlane" />
+    </fragment>
+    <fragment
+        android:id="@+id/yearDetails"
+        android:name="com.app.financialmanagement.Presentation.User.FinacialPlane.YearPlanDetails"
+        tools:layout="@layout/fragment_year_plan_details" >
+        <action
+            android:id="@+id/action_yearDetails_to_financialPlane"
+            app:destination="@id/financialPlane" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.app.financialmanagement.Presentation.User.UserProfile"
+        tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/graph"
+        android:name="com.app.financialmanagement.Presentation.User.FinancialStatements.GraphFragment"
+        tools:layout="@layout/fragment_graph">
+        <action
+            android:id="@+id/action_graph_to_financialStatement"
+            app:destination="@id/financialStatement" />
+    </fragment>
+    <fragment
+        android:id="@+id/addingAnnual"
+        android:name="com.app.financialmanagement.Presentation.User.FinancialStatements.Annual.AddingNewAnnualCost"
+        tools:layout="@layout/fragment_adding_new_annual_cost">
+        <action
+            android:id="@+id/action_addingAnnual_to_annualCosts"
+            app:destination="@id/annualCosts" />
+    </fragment>
+    <fragment
+        android:id="@+id/addingDailyExpenses"
+        android:name="com.app.financialmanagement.Presentation.User.FinancialStatements.DailyExpenses.AddingDailyExpenses"
+        tools:layout="@layout/fragment_adding_daily_expenses">
+        <action
+            android:id="@+id/action_addingDailyExpenses_to_dailyExpenses"
+            app:destination="@id/dailyExpenses" />
+    </fragment>
+    <fragment
+        android:id="@+id/addingHobbies"
+        android:name="com.app.financialmanagement.Presentation.User.FinancialStatements.Hobbies.AddingHobbies"
+        tools:layout="@layout/fragment_adding_hobbies">
+        <action
+            android:id="@+id/action_addingHobbies_to_hobbies"
+            app:destination="@id/hobbies" />
+    </fragment>
+    <fragment
+        android:id="@+id/addingMonthlyCost"
+        android:name="com.app.financialmanagement.Presentation.User.FinancialStatements.MonthlyCost.AddingMonthlyGoal"
+        tools:layout="@layout/fragment_adding_monthly_goal">
+        <action
+            android:id="@+id/action_addingMonthlyCost_to_monthlyCosts"
+            app:destination="@id/monthlyCosts" />
+    </fragment>
+    <fragment
+        android:id="@+id/addingMonthlySaving"
+        android:name="com.app.financialmanagement.Presentation.User.FinancialStatements.MonthlySaving.AddingMonthlySaving"
+        tools:layout="@layout/fragment_adding_monthly_saving">
+        <action
+            android:id="@+id/action_addingMonthlySaving_to_monthlySavings"
+            app:destination="@id/monthlySavings" />
+    </fragment>
+
+</navigation>

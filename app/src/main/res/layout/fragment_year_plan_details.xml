@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background3"
+    tools:context=".Presentation.User.FinacialPlane.YearPlanDetails">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/baseline_arrow_back_ios_24"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/arrowBack"
+                android:layout_margin="@dimen/_5sdp"/>
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="2024"
+                android:textColor="@color/color4"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/exposes"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            app:cardBackgroundColor="@color/color5"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintTop_toBottomOf="@id/title">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_shape1"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <org.eazegraph.lib.charts.PieChart
+                        android:id="@+id/piechart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_7sdp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical">
+
+                                <View
+                                    android:layout_width="15dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#66BB6A" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="10dp"
+                                    android:text="Annual Expenses" />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical">
+
+                                <View
+                                    android:layout_width="15dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#cdd9d3" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="10dp"
+                                    android:text="Annual Debts" />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/save1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical">
+
+                                <View
+                                    android:layout_width="15dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#f7c85c" />
+
+                                <TextView
+                                    android:id="@+id/save1Text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="10dp"
+                                    android:text="Annual Goals" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical">
+
+                                <View
+                                    android:layout_width="15dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#A2A6A4" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="10dp"
+                                    android:text="Annual Saving" />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical">
+
+                                <View
+                                    android:layout_width="15dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#242424" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="10dp"
+                                    android:text="Monthly Cost" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/daily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_7sdp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/monthly">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Annual expenses"
+                android:textColor="@color/color4"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/exposes" />
+
+            <TextView
+                android:id="@+id/exposesCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="0 SAR"
+                android:textColor="@color/color4"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/debts" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/debts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_7sdp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/daily">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Annual Debts:-"
+                android:textColor="@color/color4"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/exposes" />
+
+            <TextView
+                android:id="@+id/debtsMoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="0 SAR"
+                android:textColor="@color/color4"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/debts" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hobbies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_7sdp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/debts">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Annual Goals:-"
+                android:textColor="@color/color4"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/exposes" />
+
+            <TextView
+                android:id="@+id/annualGoals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="0 SAR"
+                android:textColor="@color/color4"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/debts" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_7sdp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/debts">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Annual Saving:-"
+                android:textColor="@color/color4"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/exposes" />
+
+            <TextView
+                android:id="@+id/savingCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="0 SAR"
+                android:textColor="@color/color4"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/debts" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_7sdp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/debts">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Monthly Cost:-"
+                android:textColor="@color/color4"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/exposes" />
+
+            <TextView
+                android:id="@+id/monthlyCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="0SAR"
+                android:textColor="@color/color4"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/debts" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginHorizontal="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/color4"
+            app:layout_constraintTop_toBottomOf="@id/hobbies" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

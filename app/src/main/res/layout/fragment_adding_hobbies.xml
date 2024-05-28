@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background3"
+    tools:context=".Presentation.User.FinancialStatements.Hobbies.AddingHobbies">
+
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/arrowBack"
+        android:layout_margin="@dimen/_5sdp"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:text="Adding Hobby"
+        android:textColor="@color/color4"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_4sdp"
+        app:layout_constraintTop_toBottomOf="@id/arrowBack" />
+     <androidx.constraintlayout.widget.ConstraintLayout
+         android:id="@+id/layout1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:padding="@dimen/_7sdp"
+         android:elevation="@dimen/_5sdp"
+         android:layout_margin="@dimen/_5sdp"
+         android:background="@drawable/linear_shape1"
+         app:layout_constraintTop_toBottomOf="@id/title">
+         <EditText
+             android:id="@+id/hobbyName"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="Hobby Name"
+             android:inputType="text"
+             android:backgroundTint="@color/white"
+             android:padding="@dimen/_7sdp"
+             android:textColor="@color/textColor"
+             android:layout_weight="1"
+             android:textColorHint="@color/textColor"
+             android:textSize="@dimen/_16sdp"
+             app:layout_constraintTop_toTopOf="parent" />
+         <EditText
+             android:id="@+id/number"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="Practice Number"
+             android:inputType="number"
+             android:backgroundTint="@color/white"
+             android:padding="@dimen/_7sdp"
+             android:textColor="@color/textColor"
+             android:layout_weight="1"
+             android:textColorHint="@color/textColor"
+             android:textSize="@dimen/_16sdp"
+             app:layout_constraintTop_toBottomOf="@id/hobbyName" />
+         <Spinner
+             android:id="@+id/range"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:backgroundTint="@color/black"
+             android:padding="@dimen/_5sdp"
+             app:layout_constraintTop_toBottomOf="@id/number" />
+         <EditText
+             android:id="@+id/otherRange"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:backgroundTint="@color/white"
+             android:hint="Enter the Range "
+             android:inputType="text"
+             android:padding="@dimen/_7sdp"
+             android:visibility="gone"
+             android:textColor="@color/textColor"
+             android:textColorHint="@color/textColor"
+             android:textSize="@dimen/_16sdp"
+             app:layout_constraintTop_toBottomOf="@id/range" />
+         <androidx.appcompat.widget.AppCompatButton
+             android:id="@+id/add"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/button_view"
+             android:elevation="@dimen/_5sdp"
+             android:text="Add"
+             android:textAllCaps="false"
+             android:textColor="@color/white"
+             android:textSize="@dimen/_18sdp"
+             android:ems="10"
+             android:layout_marginTop="@dimen/_20sdp"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintTop_toBottomOf="@id/otherRange" />
+
+     </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

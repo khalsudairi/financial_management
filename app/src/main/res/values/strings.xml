@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">financial management</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aboutUs">Allow users to create and manage budgets. Users can set spending limits for different categories and track their expenses against these budgets. Real-time updates help users stay on top of their financial goals.</string>
+    <string name="name">Financial Management Platform</string>
+    <string-array name="priority">
+        <item>select priority</item>
+        <item>1 Important</item>
+        <item>2 less important</item>
+        <item>3 Not Important</item>
+    </string-array>
+    <string-array name="expensesType">
+        <item>Fixed expenses</item>
+        <item>Variable expenses</item>
+    </string-array>
+</resources>
